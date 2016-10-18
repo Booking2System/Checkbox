@@ -20,6 +20,7 @@ public class Mydialog {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
+
             }
         });
         builder.show();
