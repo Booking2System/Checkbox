@@ -41,6 +41,7 @@ public class Detail extends AppCompatActivity {
                     MyDialogDetail(Detail.this,"กรุณากรอกให้ครบ","ผิดพลาด");
 
                 } else {
+
                     MyDialogDetail(Detail.this,"ขอบคุณครับ","จองแล้ว");
                 }
 
