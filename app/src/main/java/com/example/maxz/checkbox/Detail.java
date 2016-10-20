@@ -1,11 +1,13 @@
 package com.example.maxz.checkbox;
 
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Detail extends AppCompatActivity {
 
@@ -41,8 +43,17 @@ public class Detail extends AppCompatActivity {
 //
 
                 } else {
-                    Mydialog mydialog = new Mydialog();
-                    mydialog.MyDialogDetail(Detail.this,"ขอบคุณครับ","จองแล้ว");
+//                     Mydialog mydialog = new Mydialog();
+//                    mydialog.MyDialogDetail(Detail.this,"ขอบคุณครับ","จองแล้ว");
+
+                    Toast.makeText(Detail.this,"จองแล้วครับ",Toast.LENGTH_SHORT).show();
+
+                    finish();
+
+//                    Intent intent = new Intent(Detail.this, MainActivity.class);
+//                    startActivity(intent);
+//
+
 
 //
                 }
