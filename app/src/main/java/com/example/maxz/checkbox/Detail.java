@@ -1,9 +1,6 @@
 package com.example.maxz.checkbox;
 
-import android.app.AlertDialog;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -38,11 +35,16 @@ public class Detail extends AppCompatActivity {
 
                 if (NameString.equals("") || TelString.equals("") || ProductString.equals("")) {
 
-                    MyDialogDetail(Detail.this,"กรุณากรอกให้ครบ","ผิดพลาด");
+                    Mydialog mydialog = new Mydialog();
+                    mydialog.MyDialogDetail(Detail.this,"กรุณากรอกให้ครบ","ผิดพลาด");
+
+//
 
                 } else {
+                    Mydialog mydialog = new Mydialog();
+                    mydialog.MyDialogDetail(Detail.this,"ขอบคุณครับ","จองแล้ว");
 
-                    MyDialogDetail(Detail.this,"ขอบคุณครับ","จองแล้ว");
+//
                 }
 
 
@@ -51,20 +53,5 @@ public class Detail extends AppCompatActivity {
         });
 
     }
-    public void MyDialogDetail(Context context, String messeng, String title) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        builder.setCancelable(false);
-        builder.setMessage(messeng);
-        builder.setTitle(title);
-        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-//                Intent intent = new Intent(Detail.this, MainActivity.class);
-//                startActivity(intent);
-                dialog.dismiss();
-
-            }
-        });
-        builder.show();
-    }
+//
 }
