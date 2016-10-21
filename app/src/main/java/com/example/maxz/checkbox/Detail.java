@@ -38,7 +38,7 @@ public class Detail extends AppCompatActivity {
                 if (NameString.equals("") || TelString.equals("") || ProductString.equals("")) {
 
                     Mydialog mydialog = new Mydialog();
-                    mydialog.MyDialogDetail(Detail.this,"กรุณากรอกให้ครบ","ผิดพลาด");
+                    mydialog.MyDialogDetail(Detail.this,"กรุณากรอกข้อมูลให้ครบ","ผิดพลาด");
 
 //
 

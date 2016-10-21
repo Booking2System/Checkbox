@@ -19,7 +19,7 @@
         android:layout_centerInParent="true" />
 
     <TextView
-        android:text="รายละเอียด"
+        android:text="กรอกรายละเอียด"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
