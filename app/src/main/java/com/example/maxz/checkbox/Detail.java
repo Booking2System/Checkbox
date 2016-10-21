@@ -46,7 +46,7 @@ public class Detail extends AppCompatActivity {
 //                     Mydialog mydialog = new Mydialog();
 //                    mydialog.MyDialogDetail(Detail.this,"ขอบคุณครับ","จองแล้ว");
 
-                    Toast.makeText(Detail.this,"จองแล้วครับ",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Detail.this,"บันทึการจองเรียบร้อย",Toast.LENGTH_SHORT).show();
 
                     finish();
 
